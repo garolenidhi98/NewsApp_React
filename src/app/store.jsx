@@ -4,5 +4,6 @@ import { userReducer } from '../redux/user';
 export const store = configureStore({
   reducer: {
     userReducer,
+
   }
 });

@@ -10,7 +10,7 @@ const NewsBoard = ({ category }) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    let url = `https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=a8116b9fcabe455486c64d38fbb9875a`;
+    let url = `https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=999957d4786748789666ab5605b4e2ee`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => {
