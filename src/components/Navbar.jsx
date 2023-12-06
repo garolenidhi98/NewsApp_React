@@ -9,7 +9,7 @@ import { auth } from "../firebase";
 const Navbar = () => {
   const user = useSelector(userSelect);
   const dispatch = useDispatch()
-  const navigate = useNavigate()
+const navigate = useNavigate()
   const handleLogout = (e)=>{
     e.preventDefault()
     dispatch(action.logout())
@@ -74,9 +74,9 @@ const Navbar = () => {
             <li className="nav-item">
               <Link to ="/fav"className="nav-link">Favorites</Link>
             </li>
-            {/* <li className="nav-item">
+            <li className="nav-item">
               <Link className="nav-link">{user?.displayName}</Link>
-            </li> */}
+            </li>
           </ul>
           <div className="d-flex">
             {user !== null ? (
